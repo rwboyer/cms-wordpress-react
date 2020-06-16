@@ -8,6 +8,7 @@ import SectionSeparator from '../components/section-separator'
 import Layout from '../components/layout'
 import { CMS_NAME } from '../lib/constants'
 import styles from '../components/post-body.module.css'
+import Counter from '../components/countinterval'
 
 export default function SearchReducer({ preview }) {
   const {register, handleSubmit} = useForm();
@@ -25,6 +26,7 @@ export default function SearchReducer({ preview }) {
       <Container>
         <Header />
           <>
+            <Counter />
             <article>
               <Head>
                 <title>
